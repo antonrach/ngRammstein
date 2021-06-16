@@ -1,0 +1,134 @@
+[
+    {
+        "album": "Herzeleid",
+        "tracks": [
+            "Wollt Ihr Das Bett In Flammen Sehen",
+            "Der Meister",
+            "Weißes Fleisch",
+            "Asche Zu Asche",
+            "Seemann",
+            "Du Riechst So Gut",
+            "Das Alte Leid",
+            "Heirate Mich",
+            "Herzeleid",
+            "Laichzeit",
+            "Rammstein"
+        ],
+        "coverURL": "herzeleid.jpg",
+        "released": "Monday, September 25, 1995"
+    },
+    {
+        "album": "Sehnsucht",
+        "tracks": [
+            "Sehnsucht",
+            "Engel",
+            "Tier",
+            "Bestrafe Mich",
+            "Du Hast",
+            "Bück Dich",
+            "Spiel Mit Mir",
+            "Klavier",
+            "Alter Mann",
+            "Eifersucht",
+            "Küss Mich (Fellfrosch)"
+        ],
+        "coverURL": "sehnsucht.jpg",
+        "released": "Friday, August 22, 1997"
+    },
+    {
+        "album": "Mutter",
+        "tracks": [
+            "Mein Herz Brennt",
+            "Links 2 3 4",
+            "Sonne",
+            "Ich Will",
+            "Feuer Frei!",
+            "Mutter",
+            "Spieluhr",
+            "Zwitter",
+            "Rein Raus",
+            "Adios",
+            "Nebel"
+        ],
+        "coverURL": "mutter.jpg",
+        "released": "Monday, April 2, 2001"
+    },
+    {
+        "album": "Reise Reise",
+        "tracks": [
+            "Reise, Reise",
+            "Mein Teil",
+            "Dalai Lama",
+            "Keine Lust",
+            "Los",
+            "Amerika",
+            "Moskau",
+            "Morgenstern",
+            "Stein Um Stein",
+            "Ohne Dich",
+            "Amour"
+        ],
+        "coverURL": "reiseReise.jpg",
+        "released": "Monday, September 27, 2004"
+    },
+    {
+        "album": "Rosenrot",
+        "tracks": [
+            "Benzin",
+            "Mann Gegen Mann",
+            "Rosenrot",
+            "Spring",
+            "Wo Bist Du",
+            "Stirb Nicht Vor Mir (Don't Die Before I Do)",
+            "Zerstören",
+            "Hilf Mir",
+            "Te Quiero Puta!",
+            "Feuer Und Wasser",
+            "Ein Lied"
+        ],
+        "coverURL": "rosenrot.jpg",
+        "released": "Friday, October 28, 2005"
+    },
+    {
+        "album": "Liebe Ist Für Alle Da",
+        "tracks": [
+            "Rammlied",
+            "Ich Tu Dir Weh",
+            "Waidmanns Heil",
+            "Haifisch",
+            "B********",
+            "Frühling In Paris",
+            "Wiener Blut",
+            "Pussy",
+            "Liebe Ist Für Alle Da",
+            "Mehr",
+            "Roter Sand",
+            "Führe mich",
+            "Donaukinder",
+            "Halt",
+            "Roter Sand (Orchester-Version)",
+            "Liese",
+            "Rammlied (Thrash-terpiece Remix by Machine Head)"
+        ],
+        "coverURL": "lifad.png",
+        "released": "Friday, October 16, 2009"
+    },
+    {
+        "album": "RAMMSTEIN",
+        "tracks": [
+            "DEUTSCHLAND",
+            "RADIO",
+            "ZEIG DICH",
+            "AUSLÄNDER",
+            "SEX",
+            "PUPPE",
+            "WAS ICH LIEBE",
+            "DIAMANT",
+            "WEIT WEG",
+            "TATTOO",
+            "HALLOMANN"
+        ],
+        "coverURL": "rammstein.jpg",
+        "released": "Friday, May 17, 2019"
+    }
+  ]

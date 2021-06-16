@@ -1,0 +1,13 @@
+<button mat-dialog-close class="close-btn">&#10006;</button>
+
+<div *ngIf="data.isAlbum === true" [ngSwitch]="imageStatus" class="switch-status">
+        <div *ngSwitchCase="'loading'">Loading cover...</div>
+        <div *ngSwitchCase="'error'" class="error-status">Couldn't load cover.</div>
+</div>
+
+<div #imgContainer class="img-container"></div>
+
+<p *ngFor="let p of data.paragraphs">{{p}}</p>
+<div *ngIf="data.isAlbum === true" class="release-date">
+    <p>Released: {{ data.released | date: 'MMM d, y' }}</p>
+</div>

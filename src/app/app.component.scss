@@ -1,0 +1,44 @@
+@import '../scss/fonts.scss';
+@import '../scss/variables.scss';
+
+.bg-pic {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../assets/img/rammstein-1617670464325-6645.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: calc(100vh + 50px + 16em);
+    //calc(100vh + 50px + 16em)
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba($color: #000000, $alpha: .5);
+    &.hid {
+        padding-bottom: 2em;
+    }
+}
+
+.ramm-cont {
+    background-color: black;
+    font-size: 3em;
+    padding: .5em 0;
+}
+
+.cards {
+    margin-bottom: 2em;
+}
+
+.no-cards {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.rammstein {
+    font-family: 'Rammstein', sans-serif;
+    margin-bottom: 0;
+    font-size: 2em;
+}

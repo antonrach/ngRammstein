@@ -1,0 +1,131 @@
+@import '../../scss/variables.scss';
+@import '../../scss/fonts.scss';
+
+.card-cont {
+    margin: 1em auto;
+    padding: .8em 1em;
+    background-color: $gray;
+    & h2 {
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+}
+
+.card {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.text {
+    font-size: 1.2em;
+    transition: .4s;
+    font-family: 'Roboto', sans-serif;
+    & p {
+        margin-bottom: .5em;
+        font-size: 1.2em;
+        &:last-of-type {
+            margin-bottom: 2em;
+        }
+    }
+    &.white {
+        color: white;
+    }
+    &.red {
+        color: #ff8f8f;
+    }
+    &.green {
+        color: #8fffb4;
+    }
+    &.blue {
+        color: #8fe1ff;
+    }
+    &.yellow {
+        color: $yellow;
+    }
+    &.purple {
+        color: #d39eff;
+    }
+    &.orange {
+        color: #ff9b70;
+    }
+}
+
+p {
+    &:last-of-type {
+        margin-bottom: 1em;
+    }
+}
+
+button {
+    margin-bottom: 1em;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.border-color-button {
+    margin-right: .5em;
+    height: 2em;
+    width: 2em;
+    display: flex;
+    border: 1px transparent solid;
+    transition: .3s;
+    &:hover {
+        transition: .3s;
+        cursor: pointer;
+        &.white {
+            border-color: white;
+        }
+        &.red {
+            border-color: #ff8f8f;
+        }
+        &.green {
+            border-color: #8fffb4;
+        }
+        &.blue {
+            border-color: #8fe1ff;
+        }
+        &.yellow {
+            border-color: $yellow;
+        }
+        &.purple {
+            border-color: #d39eff;
+        }
+        &.orange {
+            border-color: #ff9b70;
+        }
+    }
+}
+
+.color-buttons {
+    display: flex;
+    & button {
+        margin: auto;
+        padding: 0 8px;
+        border: none;
+        width: 1.5em;
+        height: 1.5em;
+        outline: none;
+        &.white {
+            background-color: white;
+        }
+        &.red {
+            background-color: #ff8f8f;
+        }
+        &.green {
+            background-color: #8fffb4;
+        }
+        &.blue {
+            background-color: #8fe1ff;
+        }
+        &.yellow {
+            background-color: $yellow;
+        }
+        &.purple {
+            background-color: #d39eff;
+        }
+        &.orange {
+            background-color: #ff9b70;
+        }
+    }
+}

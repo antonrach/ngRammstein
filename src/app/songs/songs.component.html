@@ -1,0 +1,25 @@
+<div class="songs">
+    <div
+        class="song"
+        *ngFor="let interInput of inputs; let idx = index"
+
+    >
+        <input
+            type="text"
+            placeholder="Enter song..."
+            maxlength="60"
+            [(ngModel)]="inputs[idx].value"
+        >
+        <button 
+            type="button"
+            class="toggle"
+            (click)="deleteInput(idx)"
+        >&#10005;</button>
+    </div>
+    <button
+        type="button"
+        class="toggle"
+        [disabled]="addDis"
+        (click)="addInput()"
+    >+</button>
+</div>

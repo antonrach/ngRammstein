@@ -1,0 +1,14 @@
+<label for="a{{ idx }}" class="option">
+    <input
+        type="radio"
+        value="{{ album }}"
+        id="a{{ idx }}"
+        name="ramm-album"
+        (change)="setPick()"
+        [checked]="check"
+    >
+    <span class="checkmark">
+        <span></span>
+    </span>
+    <span class="album-name">{{ album }}</span>
+</label>

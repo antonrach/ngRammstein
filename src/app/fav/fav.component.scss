@@ -1,0 +1,79 @@
+@import '../../scss/variables.scss';
+@import '../../scss/fonts.scss';
+
+.fav-cont {
+    margin: 1em auto;
+    padding: .8em 1em;
+    background-color: $gray;
+}
+
+.fav-h3 {
+    color: $yellow;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    &.no-songs {
+        font-size: 1.2em;
+        color: #ff8f8f
+    }
+}
+
+.radio-poll {
+    margin-bottom: 1.5em;
+    & label {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5em;
+        margin-bottom: .4em;
+        transition: .3s;
+        position: relative;
+        &:hover {
+            cursor: pointer;
+            color: $yellow;
+            transition: .3s;
+            & .checkmark {
+                transition: .3s;
+                background-color: rgba($color: #000000, $alpha: .1);
+                & span {
+                    transition: .3s;
+                    background-color: rgba($color: #000000, $alpha: .1);
+                }
+            }
+        }
+        & input {
+            display: none;
+            &:checked {
+                & ~ .checkmark {
+                    background-color: $yellow;
+                    transition: .3s;
+                    & span {
+                        opacity: 1;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.buttons-set {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1em 0;
+}
+
+.toggle {
+    margin: 0;
+    margin-right: 1em;
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
+.resFav {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    margin-bottom: .75em;
+}

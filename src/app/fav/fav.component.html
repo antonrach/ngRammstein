@@ -1,0 +1,47 @@
+<div class="fav-cont" id="fav-cont">
+    <form
+        *ngIf="toggle; else favResults"
+        (ngSubmit)="setToggle(false); setFavSongs(_inputs)"
+    >
+        <h3 class="fav-h3">What's your favorite album?</h3>
+        <div class="radio-poll">
+            <app-option
+                *ngFor="let iterAlb of albums; let idx = index"
+                [album]="iterAlb.album"
+                [check]="iterAlb.checked"
+                [idx]="idx + 1"
+                (newPick)="setFavAlbum($event)"
+            ></app-option>
+        </div>
+        <h3 class="fav-h3">What're your favorite songs?</h3>
+        <app-songs
+            (newSongs)="setFavAlbum($event)"
+            [inputs]="_inputs"
+            #appsongs
+        ></app-songs>
+        <button
+            class="toggle"
+            [disabled]="!favAlbum"
+            type="submit"
+        >OK</button>
+    </form>
+
+    <ng-template #favResults>
+        <p class="resFav">{{"Favourite album is:" | titlecase }}</p>
+        <h3 class="fav-h3">{{ favAlbum }}</h3>
+        <p class="resFav">{{ resFavS }}</p>
+        <h3 class="fav-h3" [class.no-songs]="resFavSHere === false">{{ favSongsString }}</h3>
+
+        <div class="buttons-set">
+            <button
+                class="toggle"
+                (click)="setToggle(true)"
+            >CHANGE</button>
+            <button
+                class="toggle"
+                (click)="setToggle(true, true)"
+            >RESET</button>
+        </div>
+
+    </ng-template>
+</div>

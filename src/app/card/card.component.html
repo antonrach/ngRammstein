@@ -1,0 +1,46 @@
+<div class="card-cont">
+    <h2
+        class="card"
+        (click)="makeAlert()"
+    >(( card.album ))</h2>
+
+    <div
+        class="text"
+        [ngClass]="{
+            white: textColor === 'white',
+            red: textColor === 'red',
+            green: textColor === 'green',
+            blue: textColor === 'blue',
+            yellow: textColor === 'yellow',
+            purple: textColor === 'purple',
+            orange: textColor === 'orange'
+        }"
+    >
+        <p
+            *ngFor="let track of card.tracks; let idx = index"
+        >((idx + 1)). (( track ))</p>
+    </div>
+    <div class="color-buttons">
+        <div class="border-color-button white" (click)="setColor('white')">
+            <button class="white"></button>
+        </div>
+        <div class="border-color-button red" (click)="setColor('red')">
+            <button class="red"></button>
+        </div>
+        <div class="border-color-button blue" (click)="setColor('blue')">
+            <button class="blue"></button>
+        </div>
+        <div class="border-color-button green" (click)="setColor('green')">
+            <button class="green"></button>
+        </div>
+        <div class="border-color-button yellow" (click)="setColor('yellow')">
+            <button class="yellow"></button>
+        </div>
+        <div class="border-color-button purple" (click)="setColor('purple')">
+            <button class="purple"></button>
+        </div>
+        <div class="border-color-button orange" (click)="setColor('orange')">
+            <button class="orange"></button>
+        </div>
+    </div>
+</div>
